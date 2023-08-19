@@ -44,7 +44,7 @@ function invocarMetodo(objeto, metodo) {
    // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
    // [NOTA]: no necesitar retornar nada.
    // Tu código:
-   objeto[metodo] ()
+   objeto[metodo]()
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -68,9 +68,7 @@ function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   if(objetoUsuario.email) {
-      return true
-} return false
+   return Boolean(objetoUsuario.email)
 }
 
 function tienePropiedad(objeto, propiedad) {
@@ -84,9 +82,7 @@ function verificarPassword(objetoUsuario, password) {
    // Verifica si la propiedad "password" del "objetoUsuario" coincide con el parámetro "password".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   if(objetoUsuario.password === password){
-      return true
-   } return false
+   return (objetoUsuario.password === password)
 }
 
 function actualizarPassword(objetoUsuario, nuevaPassword) {
@@ -115,7 +111,8 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Tu código:
    for(i = 0; i < objetoMuchosUsuarios.length; i++){
       objetoMuchosUsuarios[i].esPremium = true
-   } return objetoMuchosUsuarios;
+   } 
+   return objetoMuchosUsuarios;
 }
 
 function sumarLikesDeUsuario(objetoUsuario) {
